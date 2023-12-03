@@ -1,0 +1,19 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta charset="utf-8">
+<div onclick="jumpApp()" style="background:#39f;color:#fff;margin:30px auto;width:300px;padding:10px;display:block;">点击这里跳转到支付宝APP</div>
+
+<script>
+    function jumpApp() {
+        
+        // 把share_id改成你自己的就行
+        // 获取方法：https://img10.360buyimg.com/imgzone/jfs/t1/222882/35/35975/3799/650d67f3F1f063750/af6d347193648ecb.png
+        const share_id = '2088012404669512';
+        
+        // 把token改成你自己的就行
+        // 微信扫描红包码提取 https://qr.alipay.com/ 后面的
+        const token = '11w18004wkjgexxujt3he66';
+        
+        // 跳转
+        location.href="https://ulink.alipay.com/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fc%252Falipay-red-qrcode%252Fshared.html%253Fchannel%253Dsearch_pwd%2526shareId%253D" + share_id + "%2526token%253D" + token + "%2526campStr%253DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%2526sign%253DqsiVOoa7TuphryWxyBdONXsMTnE3jiIBvWeUs3yV1sw%253D%2526chInfo%253DDingtalk%2526c_stype%253Dsearch_pwd";
+    }
+</script>
